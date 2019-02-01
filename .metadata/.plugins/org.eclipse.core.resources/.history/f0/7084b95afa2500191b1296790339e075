@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simentics</title>
+</head>
+<body>
+<header>
+<h1>시멘틱 태그 연습 페이지</h1>
+</header>
+<hr>
+<section>
+
+</section>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<hr>
+<footer>
+<center>
+	copyright@kh.org &nbsp; 2019-02-01 제작자 : 헝길동<br>
+	대표전화 : 02-1234-1234, fax 02 - 1235-1256 
+</center>
+</footer>
+</body>
+</html>

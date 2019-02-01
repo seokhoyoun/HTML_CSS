@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TestVideo</title>
+</head>
+<body>
+<h1>video 태그 테스트/h1>
+<hr>
+<video src="../resources/multi/video1.mp4" width="500" height="400" controls loop="1" autoplay poster="../resources/images/flower1.jpg"></video>
+</body>
+</html>

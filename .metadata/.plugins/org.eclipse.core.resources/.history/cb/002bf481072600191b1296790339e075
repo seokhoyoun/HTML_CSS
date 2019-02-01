@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audio</title>
+</head>
+<body>
+<h1>오디오 테스트</h1>
+<hr>
+<!-- <audio src="../resources/multi/major.mp3" controls autoplay loop="1"></audio> -->
+<!-- 모든 브라우저에서 재생되게하려면 ... -->
+<audio controls loop="1" autoplay>
+	<source src="../resources/multi/major.mp3" type="audio/mp3">
+	<source src="../resources/multi/major.ogg" type="audio/ogg">
+</audio>
+</body>
+</html>

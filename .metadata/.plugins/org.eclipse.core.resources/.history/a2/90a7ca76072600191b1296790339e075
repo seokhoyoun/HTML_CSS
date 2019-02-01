@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audio</title>
+</head>
+<body>
+<h1>오디오 테스트</h1>
+<hr>
+<audio src="../resources/multi/major.mp3" controls autoplay loop="1"></audio>
+</body>
+</html>
