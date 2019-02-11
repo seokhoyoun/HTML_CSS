@@ -1,0 +1,44 @@
+/* sample_3.css => testCss3_3.html 적용*/
+
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+
+div.myphoto1{
+	position: relative;
+	left: 30px;
+	top: 30px;
+	width:120px;
+	height:100px;
+	padding:10px;
+	background:#cbcb96;
+	box-shadow:1px 1px 5px rgba(0,0,0, 0.5);
+	/*원래 상태로 되돌아올 때의 에니메이션 설정이다.*/
+	transition: all 3s linear;
+	-webkit-transition: all 3s linear;
+	-moz-transition: all 3s linear;
+	-o-transition: all 3s linear;
+	-ms-transition: all 3s linear;
+}
+
+div.myphoto1:hover{
+	/*transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg); */
+	transform:scale(2, 2);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	/*마우스 대었을 때 transition을 다르게 설정하려면..*/
+	transition: all 3s ease-out;
+	-webkit-transition: all 3s ease-out;
+	-moz-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	-ms-transition: all 3s ease-out;
+}
