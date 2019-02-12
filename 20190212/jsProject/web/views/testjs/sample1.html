@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>s1</title>
+<style type="text/css">
+ p{border: 1px solid blue;}
+</style>
+<script type="text/javascript">
+  function myFunction1(){
+	  document.getElementById("demo2").innerHTML = "버튼 클릭으로 실행된 myFunction1() 함수 구동 테스트";
+  }
+</script>
+<script type="text/javascript" src="../../resources/js/main.js "></script>
+</head>
+<body>
+<h1>자바스크립트 작성 위치와 작성 방법</h1>
+<p id="demo1">inline방식 시작 태그에 자바스크립트가 제공하는 이벤트 핸들러(on이벤트명)를 사용하여<br>
+자바 스크립트 소스를 연결할 수 있다. on이벤트 속성은 자바스크립트가 제공하며, 모든 태그에 사용할 수 있다.</p>
+<button onclick="document.getElementById('demo1').innerHTML = 'onclick 이벤트에의해 실행된 자바스크립트 테스트'">클릭하세여</button>
+<hr>
+<h2>internal방식 : 자바스크립트 소스를 script 태그안에 function(함수) 단위로 작성하는 방법</h2>
+<p id="demo2">script태그의 작성 위치는 head body html 밖 어디든 작성가능하다.<br>
+한 문서 안에 여러 번 사용해도 된다.html태그에서 자바스크립트 함수를 실행하는 방법은 시작태그에 on이벤트 속성을 추가하고<br>
+속성값에 실행할 함수명()을 사용한다.</p>
+<button onclick="myFunction1();">클릭하세여2</button>
+<br>
+<p id="demo3">
+  아래의 버튼을 클릭하면 스타일시트 css속성 변경
+</p>
+<button onclick="changeCSS();">스타일바꾸기</button>
+<script type="text/javascript">
+  function changeCSS(){
+	  //글자색,테두리선,글자크기,배경색
+	  var element = document.getElementById("demo3");
+	  element.style.color = "white";
+	  element.style.backgroundColor = "dodgerblue";
+	  element.style.border = "2px double orange";
+	  element.style.fontSize = "15px";
+	  
+  }
+</script>
+
+<hr>
+<h2>external 방식 : 별도의 자바스크립트 소스 파일(*.js)을 작성해두고, 필요한 html문서에서 가져다 사용하는 방식</h2>
+<button onclick="testShow();">클릭하세요 3</button>
+<br>
+<img id="image1" src="../../resources/images/button.jpg" alt="사진" width="150" height="150" border="0" onclick="changeImage();">
+<p>그림을 클릭하면 해당 img태그의 src속성 값을 바꾸는 changeImage() 함수가 실행된다. </p>
+</body>
+</html>
