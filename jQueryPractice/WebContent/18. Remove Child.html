@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Remove Child</title>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
@@ -8,8 +9,15 @@
 	 * 기능 : h2를 제외한 모든 하위 요소 삭제
 	 * 함수 : children(), not(), remove()
 	 */
-	function run() {
+	/* function run() {
 		$("#target").children().not("h2").remove();
+	} */
+		function run() {
+		var selector = document.querySelector('#target');
+		var nodes = document.querySelectorAll(selector+':not("h2"');
+		alert(nodes);
+		
+		
 	}
 </script>
 
